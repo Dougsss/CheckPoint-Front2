@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: black;
+    background-color: #E0FFFF;
+    display: flex;
+    
+}
+
+#check{
+    display: none;
+}
+
+#icon{
+    cursor: pointer;
+    padding: 5px;
+    position: fixed;
+    z-index: 1;
+}
+
+#logo{
+    padding-left: 50px;
+}
+
+.topo{
+    display: flex;
+    background-color: #00688B;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+}
+
+.barra{
+    background-color: #00688B;
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+nav a{
+    text-decoration: none;
+} 
+
+.grid-container {
+    columns: 5 200px;
+    column-gap: 1.5rem;
+    width: 90%;
+    margin: 95px auto;
+    border: solid 2px #00688B;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+ /** #card {
+    width: 200px;
+    margin: 0 1.5rem 1.5rem 0;
+    display: inline-block;
+    width: 100%;
+    border: solid 2px black;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    transition: all .25s ease-in-out;
+  } **/   
+
+.cdi{
+    width: 200px;
+    margin: 0 1.5rem 1.5rem 0;
+    display: inline-block;
+    width: 100%;
+    border: solid 2px #00688B;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    transition: all .25s ease-in-out;
+}
+
+.cdi:hover {
+    border-color: #00CDCD;
+}
+
+  img {
+    width: 100%;
+    border-radius: 5px;
+    transition: all .25s ease-in-out;
+  }
+
+.link1{
+    background-color: #009ACD;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    transition: all .1s linear;
+    color: white;
+    border-bottom: 2px solid #00B2EE;
+    opacity: 0;
+    margin-top: 200px;
+}
+
+.link{
+    background-color: #009ACD;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    transition: all .1s linear;
+    color: white;
+    border-bottom: 2px solid #00B2EE;
+    opacity: 0;
+    margin-top: 200px;
+}
+
+.link1:hover{
+    background-color: #00B2EE;
+}
+
+.link:hover{
+    background-color: #00B2EE;
+}
+
+#check:checked ~ .barra{
+    transform: translateX(300px);
+}
+
+#check:checked ~ .barra nav a .link1{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .2s;
+}
+
+#check:checked ~ .barra nav a .link{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .2s;
+}

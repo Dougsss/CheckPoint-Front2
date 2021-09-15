@@ -4,9 +4,47 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pojeto</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/form1.css">
+  <link rel="shortcut icon" href="/img/iconPag.jpg" type="imagem/icon">
+  <title>Só Carrão</title>
 </head>
 <body>
+  <input type="checkbox" id="check">
+  <label id="icon" for="check"><img src="/img/clipart1587307.png" width="35" height="35"></label>
+  <div class="topo">
+    <div id="logo">
+      <img src="/img/logo-branco.png" height="50">
+    </div>
+  </div>
+  <div class="barra">
+    <nav>
+      <a href="#" onclick="form()"><div class="link1">Adicionar Veículo</div></a>
+      <a href=""><div class="link">A Equipe</div></a>
+      <a href=""><div class="link">Entrar em Contato</div></a>
+    </nav>
+  </div>
+
+  <div id="form">
+    <a href="#" onclick="fechar()">[Fechar]</a>
+    <br>
+    <div class="title">Cadastre seu Veículo</div>
+    <div class="subtitle"></div>
+    <div class="input-container c1">
+        <input id="carName" class="input" type="text" placeholder="Modelo" />
+    </div>
+    <div class="input-container c2">
+        <input id="carValor" class="input" type="text" placeholder="Valor" />
+    </div>
+    <div class="input-container c2">
+        <input id="url_img" class="input" type="text" placeholder="Url imagem" />
+    </div>    
+        <button type="text" class="submit" onclick="createCard()" id="btnCreateCard">submit</button>
+  </div>
+  
+  <div class="grid-container">
+  <div id="card"></div>
+  </div>
   
   <script src="./app/app.js"></script>
 </body>
